@@ -43,5 +43,5 @@ Final Note
 This project is a great start to building my portfolio in data analytics, especially focused on backend SQL-based data preparation. More analytics-focused projects coming soon!
 
 🔗 Connect with me on http://www.linkedin.com/in/dhinesh-kumar-7499052b5
-    Contact: dhineshsaran27122002@gmail.com
+Contact: dhineshsaran27122002@gmail.com
 
