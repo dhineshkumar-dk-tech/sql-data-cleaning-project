@@ -1,47 +1,45 @@
-SQL Data Cleaning Project – Layoffs Dataset
+SQL Data Cleaning & Exploratory Data Analysis – Layoffs Dataset
+ Project Overview
+This project showcases a complete **end-to-end data preparation and analysis process using SQL only**.  
+I worked on a real-world layoffs dataset to first clean the data using SQL and then performed **Exploratory Data Analysis (EDA)** — all within **MySQL**, without using Excel or Python.
+The goal was to take a raw, messy dataset and turn it into an analysis-ready format, then derive meaningful insights directly using SQL queries.
 
-Project Overview:
-              This project focuses on **cleaning and preparing a real-world layoffs dataset** using **MySQL**. The dataset contains company layoff data across different industries and locations. The cleaning was performed entirely through **SQL queries**, making this a strong example of backend data preprocessing.
+Phase 1: Data Cleaning (cleaning_queries.sql)
+Key operations performed:
+- ✅ Removed duplicate rows using `ROW_NUMBER()` and CTEs
+- ✅ Handled `NULL` and blank values in industry, layoff counts, and other fields
+- ✅ Trimmed inconsistent text entries (like trailing dots and mixed casing)
+- ✅ Standardized country and industry names
+- ✅ Converted string-based date columns into proper SQL `DATE` format
+- ✅ Dropped unnecessary columns (like helper `row_num`)
 
-By cleaning this dataset, I aimed to prepare it for reliable analysis by removing inconsistencies, null values, and formatting issues that could affect the quality of insights.
+All these queries are available in: **`cleaning_queries.sql`**
 
- Tools & Technologies
-- MySQL (Workbench)
-- SQL (DDL, DML, Window Functions, CTEs)
+Phase 2: Exploratory Data Analysis (eda_queries.sql)
+Key insights generated through SQL queries:
+-  Most affected industries by total layoffs
+-  Top countries with the highest number of layoffs
+-  Companies with multiple rounds of layoffs
+-  Layoff trends over time using grouped dates
+-  Industry and country-wise breakdown using `GROUP BY`, `ORDER BY`, `HAVING`, and aggregate functions
+All EDA queries are available in: **`eda_queries.sql`**
 
-Key Cleaning Tasks Performed
+Tools & Technologies
 
-✅ **Removed Duplicate Records**  
-✅ **Trimmed and Standardized Text Fields** (like `company`, `country`, `industry`)  
-✅ **Handled Null and Blank Values**  
-✅ **Cleaned and Converted Date Fields** into proper DATE format  
-✅ **Normalized Data Entries** such as inconsistent industry or country names  
-✅ **Removed Invalid Rows** with no meaningful data
+- MySQL
+- SQL Queries – DDL, DML, CTEs, Window Functions, Aggregates, Filtering
+- No external tools — full project handled using SQL inside MySQL Workbench
 
-Files Included
-
-- `cleaning_queries_sql.sql` – All SQL queries used in the data cleaning process
--  `raw_data.csv` – Original dataset
--  `cleaned_data_sql.csv` – Final dataset after cleaning 
-
- What I Learned
-
-This project helped me strengthen my skills in:
-- SQL query structuring for data wrangling
-- Using `ROW_NUMBER()` and CTEs to manage duplicates
-- Data type conversions and NULL handling
-- Real-world data cleanup for business analysis
-
-Sample Insights Gained After Cleaning 
-
-- Industry-wise layoff patterns
-- Countries with the highest layoffs
-- Companies with repeated layoffs over time
+What I Learned
+- How to clean real-world data using structured SQL logic
+- Writing efficient queries for grouping, aggregation, and filtering
+- Applying analytical thinking using only SQL — no Python or Excel
+- Structuring data projects in a clean and professional format
 
 Final Note
-
-This project is a great start to building my portfolio in data analytics, especially focused on backend SQL-based data preparation. More analytics-focused projects coming soon!
+This project proves that "SQL alone can handle both cleaning and analysis of data", making it an incredibly powerful tool for any aspiring data analyst.
+Thanks for visiting!  
+Stay tuned — more SQL and data analysis projects coming soon 🚀
 
 🔗 Connect with me on http://www.linkedin.com/in/dhinesh-kumar-7499052b5
 Contact: dhineshsaran27122002@gmail.com
-
